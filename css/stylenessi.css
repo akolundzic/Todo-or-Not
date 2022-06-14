@@ -1,0 +1,86 @@
+:root {
+    --dark: #6093a9;
+    --darker: #22416c;
+    --darkest: #101115;
+    --light: rgba(255, 220, 215, 0.844);
+    --lila:rgb(157, 0, 255);
+    --purple:#8f0551;
+    --gray:#9c9c9c;
+
+}
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+    background:-webkit-linear-gradient( #083b4c, #189990 );
+    /*background-image: url('pics/venom1.jpeg');*/
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+header {
+
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+header h1 {
+    font-size:2.5rem;
+    font-weight:300;
+    color:white;
+    margin-bottom:1rem;
+}
+#new-task-form{
+   display:flex; 
+
+}
+input, button{
+    appearance:none;
+    border:none;
+    outline:none;
+    background: white;
+}
+#new-task-input{
+    flex: 1 1 0%;
+    padding: 1rem;
+    border: 1px solid rgb(34, 192, 255);
+    border-radius:1rem;
+    margin-right: 1rem;
+    height:1.25rem;
+    font-size:1.25rem;
+    width:50vh;
+   /*widht responsive, how?*/
+   
+}
+/*was ist :: eigentlich?*/
+#new-task-input::placeholder {
+    color: var(--darker);
+}
+#new-task-submit{
+    color: var(--purple);
+    font-size:1.25rem;
+    transition:0.4s;
+    font-weight:700;
+    border-radius:2rem;
+    
+}
+
+/*Styles for main ----*/
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    border: 1px solid rgb(34, 192, 255);
+    border-radius:1rem;
+    margin-right: 1rem;
+    height:1.25rem;
+    font-size:1.25rem;
+    width:50vh;
+    display: center;
+
+}

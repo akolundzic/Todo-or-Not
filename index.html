@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------directory: CSS/filename.css------->
+    <link rel="stylesheet" href="CSS/fontstyle.css"/>
+    <title>Baby Yoda Shush - Spoiler Alert !</title>  
+    <link rel="stylesheet" href="css/stylenessi.css">
+</head>
+<!-- First Heading -->
+<body>
+<header>
+    <!--header tag Start-->
+    <h1>Task List 2021</h1>
+    <!--Form for To do list--------->
+    <form class="new-task-form">
+         <!--add new task---------------->
+        <input 
+            type="text" 
+            id="new-task-input" 
+            placeholder="What's your plan?">
+            <!--Submit task-------------->
+        <input 
+            type="submit" 
+            id="new-task-submit" 
+            value="Add task">
+    </form>
+    <!--Ende heder tag -->
+</header>
+<!--Start Main Function--------->
+<main>
+    <section class="task-list">
+        <h2>Tasks</h2>
+    <!--div bodies fields -------->
+    <div id="tasks">
+        <div id="task">
+            <!--content field -------->
+            <div class="content">
+                <!--textinput----->
+                <input type="text" 
+                 class="taskinput"
+                 value="Play Lyra"
+                 readonly
+                 >
+            </div>
+            <!--end class content-->
+            <div class="actions">
+                <button type="button" class="edit">edit</button>
+                <button type="button" class="delete">delete</button>
+            </div>
+        </div>
+        <!--taskitem----------------->
+    </div>
+    <!--end section----------->
+    </section>
+    
+</main>
+ <!--javascript ------->
+ <script type="text/javascript" src="javascript/taskevents.js">
+
+ </script>
+</body>
+
+</html>
