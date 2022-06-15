@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do or Not-To-DO</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="profile">
+                <img id="prof-pic" src="images/profilePic.jpeg">
+                <h3>Hello, John!</h3>
+            </div>
+            <h3 id="logout">Log out</h3>
+        </div>
+    </header>
+    <main>
+        <br>
+        <h1>John's To Do List!</h1>
+        <form id="new-task-form"> <!--adding tasks-->
+            <input type="text" id="new-task-input" placeholder="What do you want to do?">
+            <button type="submit" id="new-task-submit">Add task</button>
+        </form>
+        <div id="task-list">
+            <h2>Tasks</h2>
+            <div id="tasks">
+                <!-- This is where all the tasks will be listed -->
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

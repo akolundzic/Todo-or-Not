@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 240, 203);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+body h1 {
+    padding: 1rem 0;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 219, 128);
+    padding: 0.5rem 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+#prof-pic {
+    border-radius: 50%;
+    max-width: 50px;
+    margin-right: 0.5rem;
+}
+
+#logout {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#logout:hover {
+    background-color:rgb(255, 239, 198);
+}
+
+
+/* JOHNS TO DO LIST HEADING */
+main h1 {
+    text-align: center;
+}
+
+
+/* ADDING NEW TASK SECTION  */
+#new-task-form {
+    display: flex;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+input, button {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: rgb(213, 213, 163);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+    color: rgb(151, 151, 151)
+}
+
+#new-task-submit {
+    color: rgb(251, 189, 65);
+    background-color: white;
+    border: 1px solid rgb(251, 189, 65);
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#new-task-submit:hover {
+    background-color: rgb(251, 189, 65);
+    color: white;
+}
+
+#new-task-submit:active {
+    opacity: 0.5;
+}
+
+
+/* TASK LIST */
+#task-list {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#task-list h2 {
+    margin-bottom: 1rem;
+}
+
+/* ONE ENTIRE TASK */
+.task {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(225, 219, 168);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+
+.task:hover {
+    box-shadow: 5px 5px rgb(133, 133, 133);
+}
+
+/* .actions button { 
+    cursor: pointer;
+    background-color: orange;
+    padding: 1rem;
+    border-radius: 1rem;
+} */
+
+
+/* ACTION BUTTONS */
+.completed-button, .delete-button, .edit-button {
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+i {
+    pointer-events: none;
+}
+
+/* COMPLETED TASK BUTTON */
+.completed-button {
+    margin-right: 0.25rem;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid greenyellow;
+    transition: 0.25s;
+}
+
+.completed-button:hover {
+    background-color: greenyellow;
+}
+
+.completed-button:active {
+    opacity: 0.5;
+}
+
+/* ONCE TASK MARKED COMPLETED */
+.completed {
+    opacity: 0.5;
+}
+
+.completed .content {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.completed .completed-button {
+    background-color: greenyellow;
+}
+
+/* DELETE BUTTON */
+.delete-button {
+    background-color: red;
+}
+
+.delete-button:hover {
+    font-size: 1.125rem;
+}
+
+.delete-button:active {
+    opacity: 0.5;
+}
+
+/* EDIT BUTTON */
+.edit-button:hover {
+    font-size: 1.125rem;
+}
+
+.edit-button:active {
+    opacity: 0.5;
+}
+
+
+/* TASK CONTENT AREA */
+.content {
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-right: 0rem;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+
