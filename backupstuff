@@ -1,0 +1,21 @@
+  <h2>Tasks</h2>
+    <!--div bodies fields -------->
+    <div id="tasks">
+        <div class="task">
+            <!--content field -------->
+            <div class="content">
+                <!--textinput----->
+                <input type="text" 
+                 class="taskinput"
+                 value="Play Lyra"
+                 
+                 >
+            </div>
+            <!--end class content-->
+            <div class="actions">
+                <button type="button" class="edit">edit</button>
+                <button type="button" class="delete">delete</button>
+            </div>
+        </div>
+        <!--taskitem----------------->
+    </div>
