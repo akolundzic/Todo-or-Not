@@ -6,6 +6,7 @@
     --lila:rgb(157, 0, 255);
     --purple:#8f0551;
     --gray:#9c9c9c;
+    --borderblue: rgb(34, 192, 255);
 
 }
 body {
@@ -44,7 +45,7 @@ input, button{
     appearance:none;
     border:none;
     outline:none;
-    background: white;
+    background: aliceblue;
 }
 #new-task-input{
     flex: 1 1 0%;
@@ -75,12 +76,66 @@ input, button{
 main{
     flex: 1 1 0%;
     padding: 2rem 1rem;
-    border: 1px solid rgb(34, 192, 255);
+    /* border: 1px solid rgb(34, 192, 255); */
     border-radius:1rem;
-    margin-right: 1rem;
+    
     height:1.25rem;
     font-size:1.25rem;
     width:50vh;
-    display: center;
-
+    text-align: center;
+    
 }
+
+.task-list {
+
+    padding: 1rem;
+}
+
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:aliceblue;
+    margin-bottom: 1rem;
+    display: flex;
+    
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--borderblue);
+    background-color: aliceblue;
+    
+}
+#tasks .task .content .taskinput {
+
+    font-size:1rem;
+    display: block;
+    font-weight: 600;
+    width:100%;
+}
+
+#tasks .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button{
+    cursor:pointer;
+    margin: 0 0.5rem;
+}
+
+
+.task .actions button:hover{
+   color: #a96092b9;
+   background-color: #8f05514e;
+}
+
+
+
+
+
+
+
