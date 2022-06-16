@@ -112,7 +112,8 @@ input, button {
     border-radius: 1rem;    
     color: #333333;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    font-family: 'Ink Free';
 }
 
 #new-task-input::placeholder {
@@ -207,7 +208,7 @@ i {
 
 .completed .content {
     text-decoration: line-through;
-    color: grey;
+    color: black;
 }
 
 /* DELETE BUTTON */
@@ -233,17 +234,19 @@ i {
     opacity: 0.5;
 }
 
-
 /* TASK CONTENT AREA */
 .content {
     flex-grow: 1;
     background-color: transparent;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-right: 0rem;
     color: #333333;
     font-weight: 600;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
+    font-family: 'Ink Free';
 }
 
-
+.content:hover {
+    cursor: default;
+}
