@@ -145,8 +145,12 @@ input, button {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    max-height: 475px;
+    overflow: hidden scroll;
+    
      
 }
+
 
 #task-list h2 {
     font-family: 'Ink Free';
