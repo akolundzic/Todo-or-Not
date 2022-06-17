@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {    
+    background-image: url(images/background.jpg);
+    display: flex;
+    flex-direction: column;
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+body h1 {
+    padding: 1rem 0;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+#contentpaper {
+    background-image: url(images/background2.png);    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 93vh;
+    width: auto; 
+
+}
+
+#contentpaper h1 {     
+    font-family: 'Ink Free';
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-top: 7.5rem;      
+    color: #333333;        
+}
+
+#logomain {
+    float:left;
+    margin-top: 7.5rem;
+    margin-left: 50rem;            
+    height: 50px;
+    width: auto;
+    padding-right: 0.5rem;       
+}
+
+hr {    
+    margin: auto;
+    width: 32rem;
+    border: none;
+    background-color: #333333a5;
+    height: 2px;
+    margin-bottom: 1rem;
+    
+}
+    
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6de9f;
+    padding: 0.5rem 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header h3 {
+    font-family: 'Ink Free';
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+#prof-pic {
+    border-radius: 50%;
+    max-width: 50px;
+    margin-right: 0.5rem;
+}
+
+/* ADDING NEW TASK SECTION  */
+#new-task-form {
+    display: flex;
+    padding: 1rem 10rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+input, button {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+/* INPUT FIRST */
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: rgba(213, 213, 163, 0.650);
+    padding: 1rem;
+    border-radius: 1rem;    
+    color: #333333;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Ink Free';
+}
+
+#new-task-input::placeholder {
+    color: #333333;
+}
+
+/* add Task BUTTON */
+#new-task-submit {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #405c5a;       
+    cursor: pointer;
+    transition: 0.3s;      
+}
+
+#new-task-submit:hover {    
+    color: #00a67e;
+    
+}
+
+#new-task-submit:active {
+    opacity: 0.5;
+}
+
+
+/* TASK LIST */
+#task-list {    
+    padding: 0rem 9rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    max-height: 475px;
+    overflow: hidden scroll;
+    
+     
+}
+
+
+#task-list h2 {
+    font-family: 'Ink Free';
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    color: #333333;
+
+}
+
+/* ONE ENTIRE TASK */
+.task {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(213, 213, 163, 0.650);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.25rem;    
+    transition: 0.5s;
+}
+
+.task:hover {
+    box-shadow: 0px 3px rgba(146, 146, 146, 0.777);
+}
+
+/* ACTION BUTTONS */
+.completed-button, .delete-button, .edit-button {
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+i {
+    pointer-events: none;
+}
+
+/* COMPLETED TASK BUTTON */
+.completed-button {
+    font-size: 1.5rem;
+    color:#405c5a;
+    margin-right: 0.25rem;    
+    transition: 0.25s;
+}
+
+.completed-button:hover {
+    color: #00a67e;
+    
+}
+
+.completed-button:active {
+    opacity: 0.5;
+}
+
+/* ONCE TASK MARKED COMPLETED */
+.completed {
+    opacity: 0.5;
+}
+
+.completed .content {
+    text-decoration: line-through;
+    color: black;
+}
+
+/* DELETE BUTTON */
+.delete-button {    
+    color: #ef3329;
+    
+}
+
+.delete-button:hover {
+    font-size: 1.125rem;
+}
+
+.delete-button:active {
+    opacity: 0.5;
+}
+
+/* EDIT BUTTON */
+.edit-button:hover {
+    font-size: 1.125rem;
+}
+
+.edit-button:active {
+    opacity: 0.5;
+}
+
+/* TASK CONTENT AREA */
+.content {
+    flex-grow: 1;
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-right: 0rem;
+    color: #333333;
+    font-weight: 600;
+    font-size: 1.25rem;
+    font-family: 'Ink Free';
+}
+
+.content:hover {
+    cursor: default;
+}
