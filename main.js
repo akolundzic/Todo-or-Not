@@ -52,9 +52,9 @@ function addTodo(event) {
             newTask.focus();
         } else {
             editTask.innerHTML = '<i class="fas fa-pencil-alt"></i>';
-            newTask.setAttribute('readonly', true);
-            // updateLocal(newTask.value); WORKING ON THIS
+            newTask.setAttribute('readonly', true); 
         }
+        updateLocal(newTask.innerText);
         
     }
 }    
@@ -150,13 +150,22 @@ function deleteLocal(task) { //deletes task inside local storage
     localStorage.setItem('tasks', JSON.stringify(localTask))
 }
 
-// function updateLocal(task) { //edits and saves tasks -- STILL WORKING ON THIS --
-//     let localTask = checkForLocal ();
+function updateLocal(task) { //edits and saves tasks -- STILL WORKING ON THIS --
+    let localTask = checkForLocal ();
 
-//     console.log(localTask);
-//     // let taskIndex = localTask.indexOf(task);
-//     console.log(taskIndex);
-//     localTask.push(task);
-//     // localTask[taskIndex]=task.toString();
+    console.log(task)
+    console.log(localTask);
+    const taskIndex = localTask.indexOf(task);
+    console.log(taskIndex);
+    // localTask.splice(taskIndex, 1)
+    // console.log(localTask)
+    
+    localTask.splice(taskIndex, 1, task)
+    console.log(taskIndex);
+
+    console.log(localTask)
+
+    // localStorage.setItem('tasks', JSON.stringify(localTask))
+    
    
-// }
+}
