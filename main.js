@@ -50,11 +50,13 @@ function addTodo(event) {
             editTask.innerHTML = 'Save';
             newTask.removeAttribute('readonly');
             newTask.focus();
+            console.log('HI')
         } else {
             editTask.innerHTML = '<i class="fas fa-pencil-alt"></i>';
             newTask.setAttribute('readonly', true); 
+            console.log('hello')
+            updateLocal(newTask.innerText); //calling the function to edit local storage
         }
-        updateLocal(newTask.innerText);
         
     }
 }    
@@ -152,20 +154,10 @@ function deleteLocal(task) { //deletes task inside local storage
 
 function updateLocal(task) { //edits and saves tasks -- STILL WORKING ON THIS --
     let localTask = checkForLocal ();
-
-    console.log(task)
-    console.log(localTask);
     const taskIndex = localTask.indexOf(task);
-    console.log(taskIndex);
-    // localTask.splice(taskIndex, 1)
-    // console.log(localTask)
     
-    localTask.splice(taskIndex, 1, task)
-    console.log(taskIndex);
-
-    console.log(localTask)
-
-    // localStorage.setItem('tasks', JSON.stringify(localTask))
-    
+    localTask.splice(taskIndex, 1, task);
+    localStorage.setItem('tasks', JSON.stringify(localTask));
    
 }
+
