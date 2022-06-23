@@ -136,7 +136,7 @@ function getTask () { //gets the tasks from local storage after refreshing
         } else {
             editTask.innerHTML = '<i class="fas fa-pencil-alt"></i>';
             newTask.setAttribute('readonly', true);
-            updateLocal(newTask.value);
+            // updateLocal(newTask.value);
         }
         
     }    
@@ -152,12 +152,12 @@ function deleteLocal(task) { //deletes task inside local storage
     localStorage.setItem('tasks', JSON.stringify(localTask))
 }
 
-function updateLocal(task) { //edits and saves tasks -- STILL WORKING ON THIS --
-    let localTask = checkForLocal ();
-    const taskIndex = localTask.indexOf(task);
+// function updateLocal(task) { //edits and saves tasks -- STILL WORKING ON THIS --
+//     let localTask = checkForLocal ();
+//     const taskIndex = localTask.indexOf(task);
     
-    localTask.splice(taskIndex, 1, task);
-    localStorage.setItem('tasks', JSON.stringify(localTask));
+//     localTask.splice(taskIndex, 1, task);
+//     localStorage.setItem('tasks', JSON.stringify(localTask));
    
-}
+// }
 
